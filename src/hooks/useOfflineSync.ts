@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { QueueItem, SyncConfig } from '../types';
-import OfflineSync from 'src/core/offlineSync';
+import OfflineSync from '../core/offlineSync';
 
 export function useOfflineSync(config?: SyncConfig) {
     const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'error'>('idle');

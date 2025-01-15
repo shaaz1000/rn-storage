@@ -1,7 +1,7 @@
 // src/hooks/useEncryptedStorage.ts
 
 import { useState, useEffect, useCallback } from 'react';
-import StorageManager from 'src/core/storageManager';
+import StorageManager from '../core/storageManager';
 
 export function useEncryptedStorage<T>(key: string, initialValue: T) {
     const [value, setValue] = useState<T>(initialValue);
