@@ -1,6 +1,6 @@
 {
   "name": "@shaaz1000/rn-storage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A comprehensive storage solution for React Native with encryption, caching, and offline sync",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
