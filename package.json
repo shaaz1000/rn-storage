@@ -1,6 +1,6 @@
 {
   "name": "@shaaz1000/rn-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive storage solution for React Native with encryption, caching, and offline sync",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shaazkhan/rn-storage.git"
+    "url": "git+https://github.com/shaaz1000/rn-storage.git"
   },
   "bugs": {
-    "url": "https://github.com/shaazkhan/rn-storage/issues"
+    "url": "https://github.com/shaaz1000/rn-storage/issues"
   },
-  "homepage": "https://github.com/shaazkhan/rn-storage#readme",
+  "homepage": "https://github.com/shaaz1000/rn-storage#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-native": ">=0.60.0",
