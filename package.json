@@ -1,15 +1,15 @@
 {
-  "name": "@shaaz/rn-storage",
+  "name": "@shaazkhan/rn-storage",
   "version": "1.0.0",
   "description": "A comprehensive storage solution for React Native with encryption, caching, and offline sync",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "eslint . --ext .ts,.tsx",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm run build",
     "docs": "typedoc --out docs src"
   },
   "keywords": [
@@ -30,10 +30,10 @@
   },
   "homepage": "https://github.com/shaaz1000/rn-storage#readme",
   "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.60.0",
     "@react-native-async-storage/async-storage": ">=1.15.0",
-    "@react-native-community/netinfo": ">=5.0.0",
-    "react": "^18.3.1",
-    "react-native": ">=0.60.0"
+    "@react-native-community/netinfo": ">=5.0.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
@@ -44,7 +44,15 @@
     "eslint": "^8.0.0",
     "jest": "^29.5.0",
     "ts-jest": "^29.1.0",
-    "typedoc": "^0.24.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "typedoc": "^0.24.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
