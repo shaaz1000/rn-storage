@@ -1,4 +1,4 @@
-# @shaaz/rn-storage
+# @shaaz1000/rn-storage
 
 A powerful and flexible storage solution for React Native applications with built-in support for encryption, caching, and offline synchronization.
 
@@ -14,7 +14,7 @@ A powerful and flexible storage solution for React Native applications with buil
 ## Installation
 
 ```bash
-npm install @shaaz/rn-storage
+npm install @shaaz1000/rn-storage
 
 # Required peer dependencies
 npm install @react-native-async-storage/async-storage @react-native-community/netinfo
@@ -23,7 +23,7 @@ npm install @react-native-async-storage/async-storage @react-native-community/ne
 ## Basic Usage
 
 ```typescript
-import { StorageManager, useStorage } from '@shaaz/rn-storage';
+import { StorageManager, useStorage } from '@shaaz1000/rn-storage';
 
 // Initialize the storage (do this in your app's entry point)
 StorageManager.initialize('your-secure-key');
@@ -108,7 +108,7 @@ const {
 
 ### Custom Encryption
 ```typescript
-import { StorageManager, Encryption } from '@shaaz/rn-storage';
+import { StorageManager, Encryption } from '@shaaz1000/rn-storage';
 
 // Initialize with a strong encryption key
 StorageManager.initialize('your-secure-encryption-key');
@@ -119,7 +119,7 @@ await StorageManager.getInstance().setItem('secure-key', sensitiveData, true);
 
 ### Caching with Size Limits
 ```typescript
-import { CacheManager } from '@shaaz/rn-storage';
+import { CacheManager } from '@shaaz1000/rn-storage';
 
 const cache = CacheManager.getInstance({
   maxSize: 100, // Maximum items in cache
@@ -132,7 +132,7 @@ await cache.set('key', data);
 
 ### Offline Sync Configuration
 ```typescript
-import { OfflineSync } from '@shaaz/rn-storage';
+import { OfflineSync } from '@shaaz1000/rn-storage';
 
 const sync = OfflineSync.getInstance();
 
